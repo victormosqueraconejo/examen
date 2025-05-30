@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6373797B"
+    tools:context=".MainActivity2">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encuesta de Satisfaccion"
+        android:textSize="32dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_margin="20dp"
+        android:text="Escoje tu nivel de satisfaccion con el producto 1: "
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgNivelTexto"
+        android:layout_marginLeft="30dp"
+        >
+        <RadioButton
+            android:id="@+id/rbAlto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alto"
+            />
+        <RadioButton
+            android:id="@+id/rbMedio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medio"
+            />
+        <RadioButton
+            android:id="@+id/rbBajo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bajo"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_margin="20dp"
+        android:text="¿Cuales son tus principales razones: "
+        />
+
+    <CheckBox
+        android:id="@+id/chBateria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Bateria"
+        />
+
+    <CheckBox
+        android:layout_marginLeft="30dp"
+        android:id="@+id/chRendimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rendimiento"
+        />
+
+    <CheckBox
+        android:layout_marginLeft="30dp"
+        android:id="@+id/chDiseno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diseño"
+        />
+
+    <CheckBox
+        android:layout_marginLeft="30dp"
+        android:id="@+id/chPantalla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pantalla"
+        />
+
+    <Button
+        android:id="@+id/btnVerResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Resumen"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        />
+
+
+
+</LinearLayout>
