@@ -115,7 +115,13 @@ public class MainActivity2 extends AppCompatActivity {
 //              }
                 else {
                     modal.setTitle("Resultado:");
-                    modal.setMessage("" + valorTotal);
+                    if (valorTotal <= 2) {
+                        modal.setMessage("Parece que no estas satifecho. \nRespuesta: "  + valorTotal);
+                    } else if (valorTotal > 3 && valorTotal <= 5 ) {
+                        modal.setMessage("Tu experiencia en medianamente buena. \nRespuesta: "  + valorTotal);
+                    } else if (valorTotal > 5) {
+                        modal.setMessage("Nos alegra saber que estas muy satisfecho. \nRespuesta: "  + valorTotal);
+                    }
                 }
                 modal.setNegativeButton("Cerrar", new DialogInterface.OnClickListener() {
                     @Override
